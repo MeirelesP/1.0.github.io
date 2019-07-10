@@ -1,35 +1,21 @@
-body{
-    background:white;
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
 }
-@media screen and (max-width:400px) {
-    body{
-        backgroun:white;
-    }
-    img{
-        width:100%
-    }
-    style{
-        width: 100%
-    }
-}
-@media screen and (max-width:800px) {
-    body{
-        backgroun:white;
-    }
-    img{
-        width:100%
-    }
-    style{
-        width: 100%
-    }
-}@media screen and (max-width:1200px) {
-    body{
-        backgroun:white;
-    }
-    img{
-        width:100%
-    }
-    style{
-        width: 100%
-    }
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
 }
