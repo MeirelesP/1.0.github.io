@@ -1,0 +1,35 @@
+body{
+    background:white;
+}
+@media screen and (max-width:400px) {
+    body{
+        backgroun:white;
+    }
+    img{
+        width:100%
+    }
+    style{
+        width: 100%
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        backgroun:white;
+    }
+    img{
+        width:100%
+    }
+    style{
+        width: 100%
+    }
+}@media screen and (max-width:1200px) {
+    body{
+        backgroun:white;
+    }
+    img{
+        width:100%
+    }
+    style{
+        width: 100%
+    }
+}
