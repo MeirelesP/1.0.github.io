@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    body{
-        background-image:url(https://wallpapercave.com/wp/wp2595161.jpg);
-        background-attachment: fixed;
-        background-size: 100%;
-        background-repeat:no-repeat;
-        background-color: #000;
-    }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #162f81;
+  background-color: #333;
 }
 
 li {
@@ -23,14 +18,14 @@ li {
 
 li a, .dropbtn {
   display: inline-block;
-  color: #fbeca0;
-  text-align: center;
+  color:black;
+  text-align: initial;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #0a1a46;
+  background-color:green;
 }
 
 li.dropdown {
@@ -59,36 +54,63 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: initial;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:#333}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
 </style>
 </head>
 <body>
-        <script type="text/javascript">
-			function rdownloadgtav() {
-				// Faz um redirecionamento sem adicionar a página original ao histórico de navegação do browser.
-				window.location.replace("https://www.rockstargames.com/br/downloads");
-			}
-        </script>
-<ul>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Jogos</a>
-    <div class="dropdown-content">
-      <a href="#">GTAV </a>
-      <a href="#">COD GHOST</a>
-      <a href="#">BF3</a>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">downloads</a>
-        <div class="dropdown-content">
-                <a href="#"><input type="button" value="Download-GTAV" onclick="rdownloadgtav();" />
-                </a>
-                <a href="#">download-COD GHOST</a>
-                <a href="#">download-bf3</a>
-  <li><a href="#news">Info</a></li>
-    </div>
-  </li>
+
+<ul class="topnav">
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="right"><a href="#about">About</a></li>
+  
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+  
+  
 </ul>
 
-<h3>teste de navbar</h3>
-<p>CLique em jogos</p>
+<div style="padding:0 16px;">
+  <h2>Responsive Topnav Example</h2>
+  <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
 
 </body>
 </html>
