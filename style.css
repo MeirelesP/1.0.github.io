@@ -1,0 +1,15 @@
+.voltar-ao-topo {
+            position: fixed;
+            bottom: 2em;
+            right: 2em;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            padding: 1em;
+            display: none;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+<!-- botao de voltar o topo -->
