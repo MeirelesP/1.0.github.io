@@ -383,12 +383,29 @@ Outra mudança drástica, porém bem-vinda, foi a diminuição da atividade da p
   <!--fim do gta-->
 			
 </div>
-
+<!--botao de voltar ao topo -->
 		<input type="radio" id="c2" name="group">
 		<div id="gta" style="margin-left: 40;" >o BF3 ou Battle Field 3... </div>
 		
 		<input type="radio" id="c3" name="group">
 		<div id="gta" style="margin-left: 40;"> O Cod ou Call Of Duty....</div>
 		</div>
+jQuery(document).ready(function() {
+            // Exibe ou oculta o botão
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 200) {
+                    jQuery('.voltar-ao-topo').fadeIn(200);
+                } else {
+                    jQuery('.voltar-ao-topo').fadeOut(200);
+                }
+            });
+            
+            // Faz animação para subir
+            jQuery('.voltar-ao-topo').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, 300);
+            })
+        });
+<!-- botao de voltar ao topo -->
 </body>
 </html>
