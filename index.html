@@ -10,8 +10,12 @@
 	<link rel="stylesheet" href="../main.css">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400">
         <link rel="stylesheet" href="css/style.css"/>
-        <script src="js/jquery.js"></script>
-        <script src="js/menu.js"></script>
+        <script src=“js/jquery.js”>
+$(document).ready(function(){
+   //código a executar quando o DOM estiver pronto para receber instruções.
+});
+</script>
+        
 	<style>
 
 		body
@@ -386,14 +390,15 @@ Outra mudança drástica, porém bem-vinda, foi a diminuição da atividade da p
   <!--fim do gta-->
 			
 </div>
-<!--botao de voltar ao topo -->
+
 		<input type="radio" id="c2" name="group">
 		<div id="gta" style="margin-left: 40;" >o BF3 ou Battle Field 3... </div>
 		
 		<input type="radio" id="c3" name="group">
 		<div id="gta" style="margin-left: 40;"> O Cod ou Call Of Duty....</div>
 		</div>
-jQuery(document).ready(function() {
+<!--botao de voltar ao topo -->
+$(document).ready(function() {
             // Exibe ou oculta o botão
             jQuery(window).scroll(function() {
                 if (jQuery(this).scrollTop() > 200) {
